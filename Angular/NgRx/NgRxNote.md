@@ -9,6 +9,8 @@
 <br/>
 `Store` is an observable of `state` and an observer of `actions`.
 
+![ngrx-store feature](https://user-images.githubusercontent.com/93693577/158959484-149322dc-0b71-4ea0-b22d-59a4050b9bfa.png)
+
 ## 2. 
 
 
