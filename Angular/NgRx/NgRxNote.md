@@ -7,7 +7,7 @@
 - **Selector**: to query out of the store for component to consume, or to wrap a piece of needed state to consume.
 - **Effects**: to handles calling side effects or api calls in response to some actions being dispatch.
 <br/>
-```Store is an observable of state and an observer of actions.```
+> Store is an observable of `state` and an observer of `actions`.
 
 ![ngrx-store feature](https://user-images.githubusercontent.com/93693577/158959484-149322dc-0b71-4ea0-b22d-59a4050b9bfa.png)
 
@@ -58,9 +58,12 @@
 	+ through constructor
 	+ by calling setState and passing an object matches the state interface
 
+- Read: using `select` method
+- Write: 
+	+ using `updater` method: analogous to "on()" in `Store reducer`
+	+ `setState` method 
+	+ `patchState` method
+- Effect:
+	+ using `effect` method, takes a callback with an Observable of values
 
 
-
-
-![ngrx-which map should we use](https://user-images.githubusercontent.com/93693577/158955690-5aee78b5-5b00-4f56-a378-7dbf545909a6.png)
-![ngrx-which map should we use 1](https://user-images.githubusercontent.com/93693577/158955698-d9c1da3d-2527-4a19-9e75-3aa82afc5db3.png)
