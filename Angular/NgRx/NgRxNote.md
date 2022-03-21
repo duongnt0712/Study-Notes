@@ -53,6 +53,8 @@
 - Global Store contains: `action`, `reducer`, `selector`, `effect` that is in all separate files
 <br/>  Component Store contains `state`, `updaters`, `effects` in a single file, and having the additional selectors file.
 
+![ngrx-compare store n component store](https://user-images.githubusercontent.com/93693577/159201881-3aa5ddb6-cf2b-47c7-b6fe-973608976e61.png)
+
 ### Component Store
 - Initialize: 2 ways
 	+ through constructor
@@ -60,10 +62,8 @@
 
 - Read: using `select` method
 - Write: 
-	+ using `updater` method: analogous to "on()" in `Store reducer`
+	+ using `updater` method: analogous to **on()** in `Store reducer`
 	+ `setState` method 
 	+ `patchState` method
 - Effect:
 	+ using `effect` method, takes a callback with an Observable of values
-
-
