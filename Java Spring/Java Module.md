@@ -1,0 +1,6 @@
+#JAVA MODULE
+- AOP
+- MVC
+- JDBC
+- ORM
+- Core
