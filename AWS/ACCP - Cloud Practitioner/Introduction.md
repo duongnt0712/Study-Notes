@@ -8,6 +8,10 @@
 | Technology              | 36%       |
 | Billing and Pricing     | 12%       |
 
+### Passing Grade
+**700/1000**
+Valid for 36 months ~ 3 years
+Around 70% to pass the exam
 ### In Details
 **Domain 1: Cloud Concepts**
 1. Define the AWS Cloud and its value proposition
@@ -32,9 +36,10 @@
 3. Identify resources available for billing support
 
 ## Response Types
-**65 questions**
+**65 questions**: 50 scored questions and 15 unscored questions
 - Multiple-choice: Choose 1 out of 4
 - Multiple-response: Choose 2 out of 5
+**Duration**: 1.5 hours ~ 1.5 mins per question
 
 ## Exam Preparation
 ### Training
