@@ -1,4 +1,3 @@
-#JAVA MODULE
 - AOP
 - MVC
 - JDBC
