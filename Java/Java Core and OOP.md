@@ -103,3 +103,39 @@ There are 4 types of syntax:
 - Access the method using the interface name
 - Classes do not need to implement an interface to use its static methods.
 ## 5. Stream API
+#### Benefits
+- Process with data in declarative way
+  `students.stream().map(Student::getName).collect(Collectors.toList());`
+- Support parallel with ease
+  `students.parallelStream().map(Student::getName).collect(Collectors.toList());`
+- Calculate elements on demand. We can create infinite streams
+  `Stream<Integer> evenNumbers = Stream.iterate(0, i -> i + 2)`
+---
+#### Create Stream
+- Using `Stream.of()`
+```java
+Stream names = Stream.of("Gomez", "Morticia", "Wednesday"); Stream ints = IntStream.of(3, 1, 4, 1, 5, 9).boxed();
+```
+- Using Stream.iterate()
+```java
+Stream nums = Stream.iterate(BigDecimal.ONE, n -> n.add(BigDecimal.ONE)).limit(10);
+```
+- Using Stream.generate()
+```java
+Stream longs = Stream.generate(Math::random).limit(10);
+```
+- From a collection
+```java
+Stream names = Arrays.asList("Greg", "Marcia", "Peter", "Jan“).stream();
+```
+- From an array
+```java
+Stream names = Arrays.stream(new String[]{"Greg", "Marcia", "Peter", "Jan“});
+```
+- From `range` and `rangeClosed` methods.
+```java
+Stream ints = IntStream.range(10, 15).boxed(); // prints [10, 11, 12, 13, 14] 
+Stream longs = LongStream.rangeClosed(10, 15).boxed(); // prints [10, 11, 12, 13, 14, 15]
+```
+---
+#### Intermediate Operations
